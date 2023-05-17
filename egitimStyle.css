@@ -1,0 +1,279 @@
+/* Genel Stiller */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #50D79C;
+    color: #333;
+}
+
+/* Menü Stilleri */
+.menu-container {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Menüyü üst sayfayı kaplayacak şekilde ayarla */
+  align-items: center; /* Dikey hizalamayı ortala */
+}
+
+.social-icons a {
+  font-size: 40px; /* İkon büyüklüğünü istediğiniz boyuta ayarlayın */
+  margin-left: 30px; /* İkonlar arasında boşluk bırakmak için gerektiğinde ayarlayın */
+  color: #3ECCE2; /* İstediğiniz renk */
+}
+
+.social-icons a:hover {
+  color: #900374; /* İkonun üzerine gelindiğindeki renk */
+}
+
+
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Menü öğelerini yatay olarak sırala */
+  justify-content: flex-end; /* Öğeleri sağa hizala */
+  align-items: center; /* Dikey hizalamayı ortala */
+}
+
+.menu li {
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  margin: 0 20px;
+}
+.menu li a:hover {
+  color: #900374; /* İkonun üzerine gelindiğindeki renk */
+}
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+/* Diğer Stiller */
+
+header, main, footer {
+    padding: 20px;
+}
+
+h1, h2, p {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Başlık Stilleri */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* İçerik Stilleri */
+#about {
+    text-align: center;
+}
+
+/**/
+/*
+
+.activity-list li,
+.sport-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.activity-image,
+.sport-image {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.activity-image img,
+.sport-image img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.activity-name,
+.sport-name {
+    margin-left: 10px;
+}
+
+section li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.event {
+  display: flex;
+  align-items: center;
+}
+
+.event-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-content {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.event-content h4 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.event-content p {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.event-reversed {
+  flex-direction: row-reverse;
+}
+
+.event-reversed .event-content {
+  text-align: right;
+  margin-left: 0;
+  margin-right: 10px;
+}*/
+.table-container {
+  display: flex;
+}
+
+.left-section,
+.right-section {
+  flex-basis: 50%;
+  padding: 20px;
+}
+
+.left-section {
+  background-color: #f8f8f8;
+}
+
+.right-section {
+  background-color: #e6e6e6;
+}
+
+.left-section h2,
+.right-section h2 {
+  text-align: left;
+}
+
+.event-content {
+  text-align: left;
+}
+
+.event-content h2 {
+  margin-bottom: 5px;
+}
+
+.event-content p {
+  margin-top: 0;
+}
+
+.event-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Footer Stilleri */
+footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+    padding-top: 10px;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Responsive Tasarım */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+
+    .profile-image img {
+        max-width: 150px;
+    }
+
+    .bio p {
+        font-size: 16px;
+    }
+
+    .activity-list li,
+    .sport-list li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .activity-image,
+    .sport-image {
+        margin-bottom: 10px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .activity-name,
+    .sport-name {
+        margin-left: 0;
+    }
+
+   /* Footer stil ayarları */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+
+}
