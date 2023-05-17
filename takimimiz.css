@@ -1,0 +1,110 @@
+ <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #FF952B;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .menu-container {
+      width: 100%;
+      background-color: #333;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .social-icons a {
+      font-size: 40px;
+      margin-left: 30px;
+      color: #3ECCE2;
+    }
+    
+    .social-icons a:hover {
+      color: #900374;
+    }
+    
+    .menu {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style-type: none;
+    }
+    
+    .menu li {
+      font-family: 'Roboto Slab', serif;
+      font-size: 28px;
+      margin: 0 20px;
+    }
+    
+    .menu li a:hover {
+      color: #900374;
+    }
+    
+    .menu li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    main {
+      flex: 1;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    #activities,
+    #sports {
+      margin-bottom: 20px;
+    }
+
+    #activities ul,
+    #sports ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .activity-list li,
+    .sport-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .activity-image,
+    .sport-image {
+      flex: 0 0 400px;
+      margin-right: 20px;
+    }
+
+    .activity-image img,
+    .sport-image img {
+      width: 100%;
+    }
+
+    .activity-name h4,
+    .sport-name h3 {
+      margin: 0;
+    }
+
+    .sidebar {
+      flex: 0 0 300px;
+      margin-left: 20px;
+    }
+
+    .sidebar iframe,
+    .sidebar .website {
+      margin-bottom: 20px;
+    }
+  </style>
