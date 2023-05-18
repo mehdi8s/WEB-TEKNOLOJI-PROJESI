@@ -1,0 +1,97 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+button {
+  display: block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+}
+
+button[type="button"] {
+  background-color: #dc3545;
+}
+
+#formResponse {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+.menu-container {
+  width: 99%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999; /* Gerekirse diğer öğelerin üstünde kalmasını sağlamak için z-index değeri ayarlayabilirsiniz */
+}
+    
+    .social-icons a {
+      font-size: 40px;
+      margin-left: 30px;
+      color: #3ECCE2;
+    }
+    
+    .social-icons a:hover {
+      color: #900374;
+    }
+    
+    .menu {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      list-style-type: none;
+    }
+    
+    .menu li {
+      font-family: 'Roboto Slab', serif;
+      font-size: 28px;
+      margin: 0 20px;
+    }
+    
+    .menu li a:hover {
+      color: #900374;
+    }
+    
+    .menu li a {
+      color: #fff;
+      text-decoration: none;
+    }
