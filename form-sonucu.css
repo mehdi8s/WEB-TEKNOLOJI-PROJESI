@@ -1,4 +1,4 @@
- <style>
+<style>
     body {
       display: flex;
       flex-direction: column;
@@ -53,59 +53,4 @@
       color: #fff;
       text-decoration: none;
     }
-
-    main {
-      flex: 1;
-      width: 100%;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
-    #activities,
-    #sports {
-      margin-bottom: 20px;
-    }
-
-    #activities ul,
-    #sports ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .activity-list li,
-    .sport-list li {
-      display: flex;
-      align-items: center;
-      margin-bottom: 50px;
-    }
-
-    .activity-image,
-    .sport-image {
-      flex: 0 0 400px;
-      margin-right: 20px;
-    }
-
-    .activity-image img,
-    .sport-image img {
-      width: 100%;
-    }
-
-    .activity-name h4,
-    .sport-name h3 {
-      margin: 0;
-    }
-
-    .sidebar {
-      flex: 0 0 300px;
-      margin-left: 20px;
-    }
-
-    .sidebar iframe,
-    .sidebar .website {
-      margin-bottom: 20px;
-    }
-	
-  </style>
+	</style>

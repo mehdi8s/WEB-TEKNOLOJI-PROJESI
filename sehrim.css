@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #6DCEF2;
+    background-color: #108491 !important;
     color: #333;
 }
 
@@ -12,20 +12,19 @@ body {
   background-color: #333;
   padding: 10px;
   display: flex;
-  justify-content: space-between; /* Menüyü üst sayfayı kaplayacak şekilde ayarla */
-  align-items: center; /* Dikey hizalamayı ortala */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .social-icons a {
-  font-size: 40px; /* İkon büyüklüğünü istediğiniz boyuta ayarlayın */
-  margin-left: 30px; /* İkonlar arasında boşluk bırakmak için gerektiğinde ayarlayın */
-  color: #3ECCE2; /* İstediğiniz renk */
+  font-size: 40px;
+  margin-left: 30px;
+  color: #3ECCE2;
 }
 
 .social-icons a:hover {
-  color: #900374; /* İkonun üzerine gelindiğindeki renk */
+  color: #900374;
 }
-
 
 .menu {
   background-color: #333;
@@ -33,9 +32,9 @@ body {
   padding: 10px 20px;
   margin: 0;
   padding: 0;
-  display: flex; /* Menü öğelerini yatay olarak sırala */
-  justify-content: flex-end; /* Öğeleri sağa hizala */
-  align-items: center; /* Dikey hizalamayı ortala */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .menu li {
@@ -43,12 +42,53 @@ body {
   font-size: 28px;
   margin: 0 20px;
 }
+
 .menu li a:hover {
-  color: #900374; /* İkonun üzerine gelindiğindeki renk */
+  color: #900374;
 }
+
 .menu li a {
   color: #fff;
   text-decoration: none;
+}
+
+/* Slider Stilleri */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Medya sorgusu: 768px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 768px) {
+  
+
+  .menu li {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
+/* Medya sorgusu: 480px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 480px) {
+  
+
+  .menu li {
+    font-size: 5px;
+    margin: 5px 0;
+  }
+
+  .social-icons a {
+    font-size: 10px;
+    margin-left: 7px;
+  }
 }
 
 /* slider stilleri */
@@ -61,6 +101,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
+  
   
 }
 /* Slider container'ı sayfanın ortasında ve yatay olarak hizalar. Genişliği sayfanın tamamını kaplar ve dikeyde ortalanır. */
@@ -74,6 +116,7 @@ body {
   margin: 0 auto;
   background-color: #F7C994;
   display: flex;
+  
 }
 /* Slider içeriği genişliği %50'e kadar olacak şekilde ayarlanır ve belirli bir maksimum genişliğe sahip olur. Slider ortalanır ve beyaz bir arka plana sahip olur. */
 
@@ -100,6 +143,7 @@ body {
   text-align: right;
  width: 80%;
   margin-right: 10%;
+  font-size:10px;
 
 }
 /* Slayt içeriği için bir boşluk (margin) ekler. */
@@ -139,16 +183,6 @@ body {
   width: 100%;
   padding: 0 20px;
 }
-/* Slider kontrol düğmeleri yatayda ortalanır ve slaytın üst orta kısmında yer alır. */
-
-/*.slider-controls button {
-  background-color: transparent;
-  border: none;
-  color: #888;
-  font-size: 24px;
-  cursor: pointer;
-}
-/* Slider kontrol düğmelerinin görünümü belirlenir. */
 
 .slider-controls button:focus {
   outline: none;
@@ -170,7 +204,6 @@ body {
   position: absolute;
   top: 15%;
   right: 0;
- 
   transform: translateY(-20%);
   transform: translateX(-20%);
   text-align: left;
@@ -256,38 +289,7 @@ footer {
 
 /* Responsive Tasarım */
 @media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
-    h2 {
-        font-size: 24px;
-    }
-
-    .profile-image img {
-        max-width: 150px;
-    }
-
-    .bio p {
-        font-size: 16px;
-    }
-
-    .activity-list li,
-    .sport-list li {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .activity-image,
-    .sport-image {
-        margin-bottom: 10px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .activity-name,
-    .sport-name {
-        margin-left: 0;
-    }
+ 
 
     footer {
         font-size: 12px;

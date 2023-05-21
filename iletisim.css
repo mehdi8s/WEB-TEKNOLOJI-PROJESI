@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  background-color:#F2F2F2;
 }
 
 h1 {
@@ -13,18 +14,21 @@ form {
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 30px;
+  font-size:20px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
+	font-size:25px;
   width: 100%;
-  padding: 5px;
-  margin-top: 5px;
+  padding: 13px;
+  margin-top: 15px;
 }
 
 button {
+	font-size:20px;
   display: block;
   margin-top: 10px;
   padding: 10px 20px;
@@ -47,51 +51,87 @@ button[type="button"] {
   padding: 10px;
   background-color: #f0f0f0;
 }
+
+/* Menü Stilleri */
 .menu-container {
-  width: 99%;
-  position: fixed;
-  top: 0;
-  left: 0;
   background-color: #333;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 9999; /* Gerekirse diğer öğelerin üstünde kalmasını sağlamak için z-index değeri ayarlayabilirsiniz */
 }
-    
-    .social-icons a {
-      font-size: 40px;
-      margin-left: 30px;
-      color: #3ECCE2;
-    }
-    
-    .social-icons a:hover {
-      color: #900374;
-    }
-    
-    .menu {
-      background-color: #333;
-      color: #fff;
-      padding: 10px 20px;
-      margin: 0;
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-      list-style-type: none;
-    }
-    
-    .menu li {
-      font-family: 'Roboto Slab', serif;
-      font-size: 28px;
-      margin: 0 20px;
-    }
-    
-    .menu li a:hover {
-      color: #900374;
-    }
-    
-    .menu li a {
-      color: #fff;
-      text-decoration: none;
-    }
+
+.social-icons a {
+  font-size: 40px;
+  margin-left: 30px;
+  color: #3ECCE2;
+}
+
+.social-icons a:hover {
+  color: #900374;
+}
+
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu li {
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  margin: 0 20px;
+}
+
+.menu li a:hover {
+  color: #900374;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Slider Stilleri */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Medya sorgusu: 768px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 768px) {
+
+
+  .menu li {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
+/* Medya sorgusu: 480px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 480px) {
+ 
+
+  .menu li {
+    font-size: 5px;
+    margin: 5px 0;
+  }
+
+  .social-icons a {
+    font-size: 10px;
+    margin-left: 7px;
+  }
+}

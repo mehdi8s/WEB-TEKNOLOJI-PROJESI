@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #50D79C;
+    background-color: #3E5083;
     color: #333;
 }
 
@@ -26,254 +26,178 @@ body {
   color: #900374; /* İkonun üzerine gelindiğindeki renk */
 }
 
-
 .menu {
   background-color: #333;
   color: #fff;
   padding: 10px 20px;
-  margin: 0;
-  padding: 0;
-  display: flex; /* Menü öğelerini yatay olarak sırala */
-  justify-content: flex-end; /* Öğeleri sağa hizala */
-  align-items: center; /* Dikey hizalamayı ortala */
+  display: flex;
+  justify-content: flex-start ; /* Değerini flex-start olarak değiştirin */
+  align-items: center;
 }
+
 
 .menu li {
   font-family: 'Roboto Slab', serif;
   font-size: 28px;
   margin: 0 20px;
 }
+
 .menu li a:hover {
-  color: #900374; /* İkonun üzerine gelindiğindeki renk */
+  color: #900374;
 }
+
 .menu li a {
   color: #fff;
   text-decoration: none;
 }
 
+/* Medya sorgusu: 768px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 768px) {
+  .menu li {
+    font-size: 20px;
+    margin: 10px 10px; /* Uzaklık değerini istediğiniz gibi ayarlayın */
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+}
+
+/* Medya sorgusu: 480px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 480px) {
+  .menu li {
+    font-size: 5px;
+    margin: 5px 5px; /* Uzaklık değerini istediğiniz gibi ayarlayın */
+  }
+  
+  .social-icons a {
+    font-size: 10px;
+    margin-left: 7px;
+  }
+}
+
 
 
 /* Diğer Stiller */
-
 header, main, footer {
-    padding: 20px;
+  padding: 20px;
 }
 
-h1, h2, p {
-    margin: 0;
+h1, h2, h3, h4, p {
+  margin: 0;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 /* Başlık Stilleri */
 h1 {
-    font-size: 36px;
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 36px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 12px;
 }
 
 /* İçerik Stilleri */
-#about {
-    text-align: center;
-}
-
-/**/
-/*
-
-.activity-list li,
-.sport-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.activity-image,
-.sport-image {
-    width: 80px;
-    height: 80px;
-    overflow: hidden;
-    border-radius: 50%;
-}
-
-.activity-image img,
-.sport-image img {
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.activity-name,
-.sport-name {
-    margin-left: 10px;
-}
-
-section li {
+.table-container {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+}
+
+.left-section{
+	background-color:#C3C4C4;
+	  flex: 0.90;
+}
+	.right-section {
+		background-color:#F2FDFF;
+  flex: 1;
 }
 
 .event {
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .event-image {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
   overflow: hidden;
+  border-radius: 10%;
 }
 
 .event-image img {
-  width: 100%;
-  height: 100%;
+  max-width: 80px;
+  height: 80px;
   object-fit: cover;
 }
 
 .event-content {
-  text-align: left;
   margin-left: 10px;
-}
-
-.event-content h4 {
-  margin-top: 0;
-  font-size: 18px;
-}
-
-.event-content p {
-  margin-top: 5px;
-  font-size: 14px;
-  text-align: left;
-}
-
-.event-reversed {
-  flex-direction: row-reverse;
-}
-
-.event-reversed .event-content {
-  text-align: right;
-  margin-left: 0;
-  margin-right: 10px;
-}*/
-.table-container {
-  display: flex;
-}
-
-.left-section,
-.right-section {
-  flex-basis: 50%;
-  padding: 20px;
-}
-
-.left-section {
-  background-color: #f8f8f8;
-}
-
-.right-section {
-  background-color: #e6e6e6;
-}
-
-.left-section h2,
-.right-section h2 {
-  text-align: left;
-}
-
-.event-content {
-  text-align: left;
-}
-
-.event-content h2 {
-  margin-bottom: 5px;
-}
-
-.event-content p {
-  margin-top: 0;
-}
-
-.event-image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 10px;
-  flex-shrink: 0;
-}
-
-.event-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* Footer Stilleri */
-footer {
-    text-align: center;
-    background-color: #f8f8f8;
-    border-top: 1px solid #ddd;
-    margin-top: 20px;
-    padding-top: 10px;
-    color: #666;
-    font-size: 14px;
 }
 
 /* Responsive Tasarım */
 @media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 28px;
-    }
-    h2 {
-        font-size: 24px;
-    }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 16px;
+  }
 
-    .profile-image img {
-        max-width: 150px;
-    }
+  .event {
+    flex-direction: column;
+    text-align: center;
+  }
 
-    .bio p {
-        font-size: 16px;
-    }
+  .event-image {
+    margin-bottom: 10px;
+    width: 120px;
+    height: 120px;
+  }
 
-    .activity-list li,
-    .sport-list li {
-        flex-direction: column;
-        text-align: center;
-    }
+  .event-image img {
+    max-width: 100px;
+    height: 100px;
+  }
 
-    .activity-image,
-    .sport-image {
-        margin-bottom: 10px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .activity-name,
-    .sport-name {
-        margin-left: 0;
-    }
-
-   /* Footer stil ayarları */
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  font-size: 12px;
+  .event-content {
+    margin-left: 0;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 12px;
+  }
 }

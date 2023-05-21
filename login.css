@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F2F2F2 !importnt;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+/* Menü Stilleri */
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons a {
+  font-size: 40px;
+  margin-left: 30px;
+  color: #3ECCE2;
+}
+
+.social-icons a:hover {
+  color: #900374;
+}
+
+.menu {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu li {
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  margin: 0;
+}
+
+.menu li a:hover {
+  color: #900374;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Medya sorgusu: 768px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 768px) {
+  .menu li {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+}
+
+/* Medya sorgusu: 480px ve altındaki ekranlar için stil ayarlamaları */
+@media (max-width: 480px) {
+  .menu li {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  display: block;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 24px;
+  border: 1px solid #CCCCCC;
+  border-radius: 4px;
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: #333333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.error-message {
+  font-size: 12px;
+  color: #FF0000;
+  margin-top: 10px;
+}
+
+.success-message {
+  font-size: 20px;
+  color: #008000;
+  margin-top: 20px;
+}
