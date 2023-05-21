@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <link rel="stylesheet" href="css/ilgi.css">
+<link rel="stylesheet" href="css/login.css">
 <meta charset="UTF-8"> 
-<title>IMDB LIST</title>	
+<title>LOGIN</title>	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-*************" crossorigin="anonymous" />
 
 </head>
 <body>
-<div class="menu-container">
+  <div class="menu-container">
     <ul class="menu navbar navbar-expand-lg navbar-dark bg-dark">
       <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
       <li class="nav-item"><a class="nav-link" href="egitimSayfa.html">Cv</a></li>
       <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-      <li class="nav-item"><a class="nav-link" href="">İlgi Alanlarım</a></li>
-      <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      <li class="nav-item"><a class="nav-link" href="ilgi.html">İlgi Alanlarım</a></li>
+      <li class="nav-item"><a class="nav-link" href="">Login</a></li>
       <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
     </ul>
     <div class="social-icons">
@@ -25,9 +25,15 @@
     </div>
   </div>
 
-
-<div class="movies"></div>
-<script src="js/ilgi.js"> </script>
-
+</div>  
+  
+   <form action="login.php" method="POST">
+   <br><br><br><br><br><br>
+        <label for="username">Kullanıcı Adı:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Giriş Yap">
+    </form>
 </body>
 </html>

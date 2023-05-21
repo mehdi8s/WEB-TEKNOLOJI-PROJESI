@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Sonucu</title>
+    <link rel="stylesheet" href="css/iletisim.css"> <!-- CSS dosyası -->
+</head>
+<body>
+<div class="menu-container">
+  <ul class="menu">
+    <li><a href="iletisim.html">İletişim</a></li>
+   
+  </ul>
+  <div class="social-icons">
+    <a href="https://www.instagram.com/8s.mehdi/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/mehdi8s" target="_blank"><i class="fab fa-github"></i></a>
+  </div>
+</div>
+<br><br><br><br><br>
+  <h1>Gönderilen Form Bilgileri:</h1>
+  <div id="formResponse">
+    <p><h2>Adınız: {{ formResponse.name }}<h2></p>
+    <p><h2>E-posta: {{ formResponse.email }}</h2></p>
+    <p><h2>Mesajınız: {{ formResponse.message }}</h2></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script>
+    // Yerel depolamada saklanan formResponse verilerini al
+    const formResponse = JSON.parse(sessionStorage.getItem('formResponse'));
+
+    new Vue({
+      el: '#formResponse',
+      data: {
+        formResponse: formResponse || {}
+      }
+    });
+  </script>
+</body>
+</html>
